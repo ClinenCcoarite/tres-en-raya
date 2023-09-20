@@ -1,0 +1,82 @@
+body{
+    background-color: #000000e7;
+    color: #eee;
+}
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin: auto;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    grid-template-rows: repeat(3,60px);
+    gap: 10px;
+}
+
+.square_1 {
+    border: 2px solid rgb(255, 255, 255);
+    padding: .3em;
+    font-size: 25px;
+    border-radius: 5px;
+}
+.square_1:hover {
+    cursor: pointer;
+}
+.winner .win {
+    margin: 0 auto;
+    width: fit-content;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    display: flex;
+    font-weight: 600;
+    gap: 15px;
+  }
+
+.selec .square_1 {
+    display: inline-flex;
+    border: none;
+}
+
+.selected {
+    background-color: rgb(21, 221, 128);
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.winner{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    background-color: rgba(48, 45, 45, 0.384);
+
+}
+.winner .text{
+    background:#111216 ;
+    height: 300px;
+    width: 320px;
+    border-radius: 20px;
+    display: flex;
+    color: rgb(255, 255, 255);
+    border: 1px solid #fff;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+button{
+    background-color: rgb(167 172 208 / 89%);
+    border: none;
+    padding: .5em;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 20px;
+    font-weight: 600;
+}
