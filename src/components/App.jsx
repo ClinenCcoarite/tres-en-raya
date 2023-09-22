@@ -1,5 +1,7 @@
 import '../style/app.css';
 import { useState } from 'react';
+import { BrowserRouter } from 'react-router-dom'
+import { Githublink } from './GithubLink'
 
 const Square = (propiedad) => {
   const { children, isSelect, index, updateBoard } = propiedad;
@@ -83,6 +85,9 @@ function App() {
 
   return (
     <div className="app">
+      <BrowserRouter>
+        <Githublink/>
+      </BrowserRouter>
       <h1>TRES EN RAYA</h1>
       <section className="game">
         {board.map((_, index) => {

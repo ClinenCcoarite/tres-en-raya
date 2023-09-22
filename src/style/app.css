@@ -12,7 +12,16 @@ body{
     flex-direction: column;
     text-align: center;
 }
-
+.github{
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+    color: #eee;
+}
+.github p{
+    font-size: 20px;
+    margin: 0;
+}
 .game {
     display: grid;
     grid-template-columns: repeat(3, 60px);
